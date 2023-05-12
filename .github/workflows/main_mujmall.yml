@@ -19,7 +19,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.2'
+          php-version: '8.0'
 
       - name: Check if composer.json exists
         id: check_files
@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'MujMall'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A694155C5B9E4E1B8497A54696E0BA02 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1F7C2110CD134423B3B5F5984EAF491F }}
           package: .
